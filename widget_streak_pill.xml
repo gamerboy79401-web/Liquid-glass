@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widgetRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_widget_liquid_pill"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="14dp"
+    android:paddingEnd="14dp"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp">
+
+    <TextView
+        android:id="@+id/widgetBadgeEmoji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🔥"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/widgetDaysValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:text="0d"
+        android:textColor="@color/text_primary"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/widgetRankTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="Seedling"
+        android:textColor="@color/accent_cyan"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <Chronometer
+        android:id="@+id/widgetChronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_secondary"
+        android:textSize="11sp" />
+
+</LinearLayout>

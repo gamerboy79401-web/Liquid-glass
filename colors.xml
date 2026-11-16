@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_deep_space">#FF070B19</color>
+    <color name="bg_midnight_indigo">#FF0F172A</color>
+    <color name="glass_surface_bright">#28FFFFFF</color>
+    <color name="glass_surface_medium">#1AFFFFFF</color>
+    <color name="glass_surface_subtle">#10FFFFFF</color>
+    <color name="glass_border_specular">#66FFFFFF</color>
+    <color name="glass_border_soft">#22FFFFFF</color>
+    <color name="accent_cyan">#FF38BDF8</color>
+    <color name="accent_indigo">#FF818CF8</color>
+    <color name="accent_emerald">#FF34D399</color>
+    <color name="accent_amber">#FFFBBF24</color>
+    <color name="accent_rose">#FFFB7185</color>
+    <color name="text_primary">#FFF8FAFC</color>
+    <color name="text_secondary">#FFCBD5E1</color>
+    <color name="text_muted">#FF94A3B8</color>
+</resources>

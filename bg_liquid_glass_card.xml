@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Outer refracted shadow glow -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="26dp" />
+            <gradient
+                android:angle="315"
+                android:startColor="#26FFFFFF"
+                android:centerColor="#14FFFFFF"
+                android:endColor="#0D38BDF8"
+                android:type="linear" />
+            <stroke
+                android:width="1.2dp"
+                android:color="#4DFFFFFF" />
+        </shape>
+    </item>
+    <!-- Inner specular top rim highlight -->
+    <item
+        android:top="1dp"
+        android:left="1dp"
+        android:right="1dp"
+        android:bottom="1dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="25dp" />
+            <gradient
+                android:angle="270"
+                android:startColor="#1FFFFFFF"
+                android:centerColor="#08FFFFFF"
+                android:endColor="#05000000"
+                android:type="linear" />
+        </shape>
+    </item>
+</layer-list>

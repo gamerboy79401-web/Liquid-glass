@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_app_logo"
+        android:roundIcon="@drawable/ic_app_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:hardwareAccelerated="true"
+        android:theme="@style/Theme.NoFapLiquidGlass">
+
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Responsive Liquid Glass Home Screen Widget -->
+        <receiver
+            android:name=".widget.StreakWidgetProvider"
+            android:exported="true"
+            android:label="@string/widget_title">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.tasnimanas.nofap.liquidglass.ACTION_INSTANT_WIDGET_SYNC" />
+                <action android:name="com.tasnimanas.nofap.liquidglass.ACTION_WIDGET_CHECK_IN" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/streak_widget_info" />
+        </receiver>
+
+        <!-- Zero-Battery Midnight Day Rollover Receiver -->
+        <receiver
+            android:name=".widget.MidnightRolloverReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+                <action android:name="android.intent.action.DATE_CHANGED" />
+                <action android:name="com.tasnimanas.nofap.liquidglass.ACTION_MIDNIGHT_ROLLOVER" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

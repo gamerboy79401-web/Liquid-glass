@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.NoFapLiquidGlass" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/accent_cyan</item>
+        <item name="colorPrimaryVariant">@color/bg_midnight_indigo</item>
+        <item name="colorSecondary">@color/accent_indigo</item>
+        <item name="android:statusBarColor">@color/bg_deep_space</item>
+        <item name="android:navigationBarColor">@color/bg_deep_space</item>
+        <item name="android:windowBackground">@drawable/bg_ambient_liquid_mesh</item>
+    </style>
+</resources>

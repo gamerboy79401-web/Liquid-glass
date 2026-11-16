@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NoFap Glass</string>
+    <string name="widget_title">Liquid Glass Streak Widget</string>
+    <string name="widget_description">Adaptive Liquid Glass streak counter that scales with widget size with 0ms sync and 0% battery drain.</string>
+</resources>
